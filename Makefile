@@ -1,6 +1,6 @@
 TWEAK_NAME = SSLPatch
-SSLPatch_FILES = Tweak.x
-SSLPatch_CFLAGS = -I. -Iexternal
+SSLPatch_FILES = Tweak.x replacement.c
+SSLPatch_CFLAGS = -I. -Iexternal -fvisibility=hidden
 SSLPatch_LIBRARIES = substrate
 SSLPatch_FRAMEWORKS = Security
 
