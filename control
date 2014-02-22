@@ -1,0 +1,15 @@
+Package: com.rpetrich.sslpatch
+Priority: optional
+Section: Tweaks
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Architecture: iphoneos-arm
+Version: 0.1
+Description: Fix SSL Bug
+Name: SSLPatch
+Depends: firmware (>= 6.0), mobilesubstrate (>= 0.9.5001)
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=sslpatchData
+Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=sslpatchData
+Sponsor: thebigboss.org <http://thebigboss.org>
+Author: Ryan Petrich <rpetrich+sslpatch@gmail.com>
+Tag: purpose::extension
+dev: rpetrich
