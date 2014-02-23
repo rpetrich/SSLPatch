@@ -575,7 +575,7 @@ void ccn_setn(cc_size n, cc_unit *r, CC_UNUSED const cc_size s_size, const cc_un
     (((x) & 0x000000ff) <<  24) )
 #define CC_SWAP_HOST_BIG_16(x) \
     (((x) & 0xff00) >>  8) | \
-    (((x) & 0x00ff) <<  8) | \
+    (((x) & 0x00ff) <<  8)
 
 /* This should probably move if we move ccn_swap out of line. */
 #if CCN_UNIT_SIZE == 8
