@@ -4,7 +4,7 @@ Section: Tweaks
 Maintainer: BigBoss <bigboss@thebigboss.org>
 Architecture: iphoneos-arm
 Version: 0.1
-Description: Fix SSL Bug
+Description: Fix for CVE-2014-1266 on iOS 6.0-7.0.5 firmwares
 Name: SSLPatch
 Depends: firmware (>= 6.0), mobilesubstrate (>= 0.9.5001), firmware (<< 7.0.6)
 Homepage: http://rpetri.ch/cydia/sslpatch
