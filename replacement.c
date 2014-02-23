@@ -3,6 +3,8 @@
 #define CCN_UNIT_SIZE 8
 #endif
 
+#import "replacement_interpose.h"
+
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated-declarations"
 

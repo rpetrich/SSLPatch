@@ -1,6 +1,7 @@
 #import <substrate.h>
 
 #import "sslHandshake.h"
+#import "replacement.h"
 
 extern void __security_debug(CFStringRef scope,
                              const char *function, const char *file, int line,
@@ -9,26 +10,9 @@ extern void __security_debug(CFStringRef scope,
 	// NOOPE!
 }
 
-void *CSSMOID_SHA1WithRSA;
-void *CSSMOID_SHA256WithRSA;
-void *CSSMOID_SHA384WithRSA;
-void *ReadyHash;
-void *SSLAllocBuffer;
-void *SSLDecodeInt;
-void *SSLFreeBuffer;
-void *SSLHashMD5;
-void *SSLHashSHA1;
-void *SSLHashSHA256;
-void *SSLHashSHA384;
-void *sslEncodeDhParams;
-void *sslFreePubKey;
-void *sslGetPubKeyFromBits;
-void *sslRawVerify;
-void *sslRsaVerify;
-
 #define LIBSECURITYSYMBOL(name) do { \
-	name = MSFindSymbol(libSecurity, "_" #name); \
-	if (!name) { \
+	_ ## name = MSFindSymbol(libSecurity, "_" #name); \
+	if (!_ ## name) { \
 		NSLog(@"SSLPatch: Failed to find " #name ". goto fail;"); \
 		return; \
 	} \
