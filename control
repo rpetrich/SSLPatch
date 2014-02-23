@@ -6,7 +6,7 @@ Architecture: iphoneos-arm
 Version: 0.1
 Description: Fix SSL Bug
 Name: SSLPatch
-Depends: firmware (>= 6.0), mobilesubstrate (>= 0.9.5001)
+Depends: firmware (>= 6.0), mobilesubstrate (>= 0.9.5001), firmware (<< 7.0.6)
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=sslpatchData
 Depiction: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=sslpatchData
 Sponsor: thebigboss.org <http://thebigboss.org>
